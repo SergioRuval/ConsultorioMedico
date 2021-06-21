@@ -10,8 +10,8 @@
         <!-- Login Form -->
         <form #frmLogin="ngForm" (ngSubmit)="onLogin(frmLogin)">
             <input type="email" class="fadeIn second" name="correo" placeholder="Email" required ngModel>
-            <input type="password" class="fadeIn third" name="password" placeholder="Contraseña" required ngModel>
-            <input type="hidden" name="role" value="DOCTOR_ROLE" ngModel>
+            <input type="text" class="fadeIn third" name="password" placeholder="Contraseña" required ngModel>
+            <input type="hidden" name="role" value="ENF_ROLE" ngModel>
             <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
         </form>
 

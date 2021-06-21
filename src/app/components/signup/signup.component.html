@@ -8,17 +8,17 @@
       </div>
   
       <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-        <input type="text" id="email" class="fadeIn third" name="login" placeholder="Correo Electrónico">
+      <form #frmSignup="ngForm" (ngSubmit)="onSignup(frmSignup)">
+        <input type="text" class="fadeIn second" name="nombre" placeholder="Nombre" required ngModel>
+        <input type="password" class="fadeIn third" name="password" placeholder="Contraseña" required ngModel>
+        <input type="email" class="fadeIn third" name="correo" placeholder="Correo Electrónico" required ngModel>
         <br>
-        <input type="radio" id="Puesto" class="fadeIn third" name="login" value="opcion1">
+        <input type="radio" class="fadeIn third" name="role" value="DOCTOR_ROLE" ngModel>
         <label class="fadeIn third" for="Puesto">
             Doctor
         </label>
         <br>
-        <input type="radio" id="Puesto" class="fadeIn third" name="login" value="opcion2">
+        <input type="radio" class="fadeIn third" name="role" value="ENF_ROLE" ngModel>
         <label class="fadeIn third" for="Puesto">
             Enfermero
         </label>

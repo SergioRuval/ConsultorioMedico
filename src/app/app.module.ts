@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './services/auth.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +13,9 @@ import { AddPatientComponent } from './components/add-patient/add-patient.compon
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { VitalSignsComponent } from './components/vital-signs/vital-signs.component';
+import { MainDoctorComponent } from './components/main-doctor/main-doctor.component';
+import { LoginEnfermeraComponent } from './components/login-enfermera/login-enfermera.component';
+import { MainEnfermeraComponent } from './components/main-enfermera/main-enfermera.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +26,20 @@ import { VitalSignsComponent } from './components/vital-signs/vital-signs.compon
     AddPatientComponent,
     LoginComponent,
     SignupComponent,
-    VitalSignsComponent
+    VitalSignsComponent,
+    MainDoctorComponent,
+    LoginEnfermeraComponent,
+    MainEnfermeraComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

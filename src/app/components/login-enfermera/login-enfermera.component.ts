@@ -4,21 +4,23 @@ import { AuthService } from 'src/app/services/auth.service';
 import { User } from 'src/app/models/user';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css']
+  selector: 'app-login-enfermera',
+  templateUrl: './login-enfermera.component.html',
+  styleUrls: ['./login-enfermera.component.css']
 })
-export class SignupComponent implements OnInit {
+export class LoginEnfermeraComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  onSignup(form: any): void{
-    this.authService.register(form.value).subscribe(res => {
+  onLogin(form: any): void{
+    form.value.role = "ENF_ROLE";
+    this.authService.login(form.value).subscribe(res => {
+      console.log(form.value);
       this.router.navigateByUrl('/enfermera');
-    });
+    })
   }
 
 }

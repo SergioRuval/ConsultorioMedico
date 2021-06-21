@@ -1,0 +1,31 @@
+<div class="container2">
+    <h1>Expediente Médico</h1>
+</div>
+
+<div class="d-flex justify-content-evenly contenedor">
+    <table class="table table-striped table-hover table-bordered border-secondary">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Antecedentes Médicos</th>
+            <th scope="col">Antecedentes Patológicos</th>
+            <th scope="col">Medicación Anterior</th>
+            <th scope="col">Diágnostico Anterior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let expediente of arrayExpedientes">
+            <th scope="row">{{expediente.name}}</th>
+            <th scope="row">{{expediente.antMed}}</th>
+            <th scope="row">{{expediente.antPad}}</th>
+            <th scope="row">{{expediente.medAnt}}</th>
+            <th scope="row">{{expediente.diagAnt}}</th>
+          </tr>
+        </tbody>
+      </table>
+      
+</div>
+
+<div class="contenedor3">
+    <a routerLink="/enfermera" class="btn btn-primary" role="button">Regresar</a>
+</div>

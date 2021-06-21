@@ -1,1 +1,77 @@
-<p>vital-signs works!</p>
+<div class="size2">
+    <h1>Signos Vitales</h1>
+</div>
+
+<div class="container">
+    <main>
+        <div class="row space">
+            <form class="needs-validation" novalidate #frmSigns="ngForm" (ngSubmit)="onSend(frmSigns)">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" name="name" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Motivo</label>
+                        <input type="text" class="form-control" name="motivo" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Peso</label>
+                        <input type="text" class="form-control" name="peso" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Estatura</label>
+                        <input type="text" class="form-control" name="talla" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label">Temperatura</label>
+                        <input type="text" class="form-control" name="temperatura" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label">Presión Arterial</label>
+                        <input type="text" class="form-control" name="preArterial" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <label for="lastName" class="form-label">Pulso</label>
+                        <input type="text" class="form-control" name="pulso" required ngModel>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="submit">Aceptar</button>
+                        <a routerLink="/enfermera" class="btn btn-primary" role="button">Regresar</a>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>

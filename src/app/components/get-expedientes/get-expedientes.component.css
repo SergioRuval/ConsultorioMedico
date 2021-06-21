@@ -1,0 +1,24 @@
+body{  
+    background: rgb(243,249,255) !important;
+    background: radial-gradient(circle, rgba(243,249,255,1) 0%, rgba(148,187,233,1) 100%) !important;
+}
+
+.contenedor{
+    text-align: center;
+    padding: 7%;
+}
+
+.contenedor3{
+    text-align: center;
+}
+
+.cards{
+    padding: 2%;
+    border-radius: 30px;
+}
+
+.container2{
+    margin: 30px;
+    margin-top: 40px;
+    text-align: center;
+}

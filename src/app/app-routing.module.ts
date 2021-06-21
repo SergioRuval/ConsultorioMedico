@@ -8,6 +8,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { MainDoctorComponent } from './components/main-doctor/main-doctor.component';
 import { LoginEnfermeraComponent } from './components/login-enfermera/login-enfermera.component'; 
 import { MainEnfermeraComponent } from './components/main-enfermera/main-enfermera.component';
+import { VitalSignsComponent } from './components/vital-signs/vital-signs.component';
+import { GetExpedientesComponent } from './components/get-expedientes/get-expedientes.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: "signup", component: SignupComponent },
   { path: "doctor", component: MainDoctorComponent },
   { path: "logEnfermera", component: LoginEnfermeraComponent },
-  { path: "enfermera", component: MainEnfermeraComponent }
+  { path: "enfermera", component: MainEnfermeraComponent },
+  { path: "signos", component: VitalSignsComponent },
+  { path: "expedientes", component: GetExpedientesComponent }
 ];
 
 @NgModule({

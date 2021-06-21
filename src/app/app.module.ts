@@ -16,6 +16,7 @@ import { VitalSignsComponent } from './components/vital-signs/vital-signs.compon
 import { MainDoctorComponent } from './components/main-doctor/main-doctor.component';
 import { LoginEnfermeraComponent } from './components/login-enfermera/login-enfermera.component';
 import { MainEnfermeraComponent } from './components/main-enfermera/main-enfermera.component';
+import { GetExpedientesComponent } from './components/get-expedientes/get-expedientes.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainEnfermeraComponent } from './components/main-enfermera/main-enferme
     VitalSignsComponent,
     MainDoctorComponent,
     LoginEnfermeraComponent,
-    MainEnfermeraComponent
+    MainEnfermeraComponent,
+    GetExpedientesComponent
   ],
   imports: [
     BrowserModule,
